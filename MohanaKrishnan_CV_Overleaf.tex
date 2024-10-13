@@ -1,0 +1,238 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Mohana}{Krishnan}{ \urlstyle{same}
+\href{mailto:mohankrishnanda007@gmail.com}{mohankrishnanda007@gmail.com} | 9790981657 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Madras University}
+\descript{Bachelor of Computer Application}
+\location{SCP Jain College}
+\location{Percentage - 85}
+\location{ 2020 -  2023 | Chennai, India}
+\sectionsep
+
+\subsection{SECONDARY SCHOOL}
+\descript{SSLC }
+\location{DVS Reddy Hr Sec School}
+\location{ Percentage - 70}
+\location{2019 - 2020 | Chennai, India}
+
+\sectionsep
+
+\descript{HSC}
+\location{DVS Reddy Hr Sec School}
+\location{ Percentage - 88}
+\location{2018 - 2019 | Chennai, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+
+LinkedIn://  \href{https://www.linkedin.com/in/mohandev}{\bf mohandev} \\
+Github:// \href{https://github.com/KrishnaDeveloper21}{\bf KrishnaDeveloper21} \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Great learning academy}
+Python Programming Language \\
+Cloud Computing \\
+Web Design and Development \\
+Numeric Python\\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\location{Programming  Languages}
+\textbullet{} Python  \textbullet{} HTML  \textbullet{} CSS  \textbullet{} JavaScript 
+\location{Frameworks \& Librabries}
+\textbullet{} Django  \textbullet{} Flask  \textbullet{} Streamlit  \textbullet{} Tkinter\\  \textbullet{} Numpy \\
+\location{Cloud Technologies}\\
+\textbullet{} AWS (S3, Lambda, Comprehend, \\Elastic Beanstalk, Cognito, CloudFront, Transcribe)\\
+\location{Databases}
+\textbullet{} MySql \\
+\location{Tools}
+\textbullet{} Git  \textbullet{} ChatGPT \\
+\sectionsep
+
+\location{Familiar:}
+ \textbullet{} Windows \textbullet{} Android 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection {\href{https://www.connectedworldtech.com}{ConnectedWorld Technology Solutions}} \\
+\descript{ Software Developer }
+\location{2023 -  2024 | Chennai, India}
+\textbullet{} Developed and maintained web applications using Python and AWS.\\
+\textbullet{} Improved application performance by \textbf{30\%} through code optimization.\\
+\textbullet{} Collaborated with cross-functional teams to design and implement innovative 
+   solutions.\\
+\sectionsep
+
+\section{Projects}
+\runsubsection{MultiLingual Customer Chat Support }
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\location{\item Feb 2024 - Apr 2024}
+\item Developed an AI-powered multilingual customer chat support system.
+\item Utilized advanced AI translation technology for seamless communication.
+\item  Improved customer satisfaction by \textbf{20\%}.
+\item Tech Stack :\textbf{Python, } \textbf{AWS Comprehend} \textbf{, AWS Elastic Beanstalk.} \textbf{, AWS Cognito, }\textbf{HTML, }\textbf{CSS, } \textbf{Flask}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{SlideSpeaker}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\location{\item Nov 2023 - Jan 2024}
+\item Created AI-driven presentations integrating voice, translation, and image generation. 
+\item Enhanced slides with AI-driven features for dynamic and accessible presentations.
+\item Increased user engagement by \textbf{25\%}.
+\item Tech Stack : \textbf{Python, } \textbf{Tkinter, } \textbf{AWS Cognito, } \textbf{Lambda, } \textbf{S3}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{AI Expert Chat}
+\begin{tightemize}
+\location{\item Apr 2024 - May 2024}
+\item Developed an AI Expert Chat focused on the Thirukkural. 
+\item Enabled users to engage with AI for insights on Thirukkural's teachings.
+\item Achieved a \textbf{95\%} user satisfaction rate.
+\item Tech Stack : \textbf{Python, } \textbf{Streamlit, } \textbf{AWS CloudFront, } \textbf{AWS Bedrock}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{TranscribePro}
+\begin{tightemize}
+\location{\item Mar 2024 - Apr 2024}
+\item Built an app for transcribing and summarizing audio files with high \textbf{100\%}accuracy.
+\item Provided users with fully transcribed notes and summaries quickly.
+\item Reduced transcription time by \textbf{50\%}.
+\item Tech Stack :   \textbf{AWS Transcribe, } \textbf{Python, } \textbf{Streamlit, } \textbf{AWS BedRock, } and \textbf{AWS Cognito}
+\end{tightemize}
+\sectionsep
+
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\location{.}
+\begin{tabular}{rll}
+2023& ICT Academy& Youth Skilling \& Employability Initiative\\
+2022& TITAN Leap& Skill Developement Traning Programme\\
+2016& Dept of Technical Education& FIRST class Junior Type Writting English\\
+& & \\
+& & \\
+& & \\
+\end{tabular}
+\sectionsep
+
+
+
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
